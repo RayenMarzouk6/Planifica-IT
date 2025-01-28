@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 510;
+    font-size: 80px;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .img-container {
+    width: 1440px;
+    height: 530px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    width: 1440px;
+    height: 97%;
+    top: 0;
+    right: 0;
+    /* background: #8E8EE0; */
+    background: #fff;
+    z-index: 2; 
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* L'image est en dessous du masque */
+}
